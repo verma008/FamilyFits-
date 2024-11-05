@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Categories</title>
+</head>
+<body>
+
+    <h1>Categories</h1>
+    <ul>
+        <!-- Thymeleaf syntax to iterate over categories -->
+        <th:block th:each="category : ${categories}">
+            <li th:text="${category.name}"></li>
+        </th:block>
+    </ul>
+
+</body>
+</html>
